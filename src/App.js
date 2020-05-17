@@ -1,33 +1,44 @@
 import React, { Component } from 'react'
-function func() {
-  console.log("I worked")
-}
-let user = {
-  first: "Maaz"
-}
-document.getElementById('button').addEventListener('click',(event)=>{
-  console.log(" I have been trigered by the newly created element")
-  console.log(event.clientX)
-})
+import { Card,CardImg,CardImgOverlay,CardBody,CardTitle,CardText } from 'reactstrap';
+class Menu extends Component{
 
-let arr = [1, 2, 3]
-class App extends Component {
-  constructor() {
-    super()
+  constructor(props){
+    super(props);
+    this.state={
+      select:null
+    }
   }
-  render() {
-    return <React.Fragment>
-      <h4 className="elem">I am {func()}</h4>
+  dishSelect=(dish)=>{
 
-      <p>Hey I am {this.props.hey}</p>
-      <p>Hey I am being written</p>
-      <p>Hey I am a {user.first}</p>
-      <h1>Hey I am a new {arr[1]}</h1>
-      <p>I would like to call this function {document.getElementById('root').addEventListener('click', (e)=>{
-        console.log("hey i am clicked")
-        console.log(e.target)
-      })}</p>
-    </React.Fragment>
   }
+  render(){
+    const menu=this.props.dishes.map((dish)=>{  //this function maps every
+      return (
+        <div className="card" onClick={()=>this.dishSelect(dish)}>
+  <div class="card-body">
+    <img src="logo.png"></img>
+      <h2 class="card-title">{dish.name}</h2>
+    <p class="card-text">{dish.description}</p>
+    <p class="card-text">{this.props.name}</p>
+    <button onClick={this.fun}>Click to know more</button>
+  </div>
+</div>
+
+      )
+      
+    });
+    return (
+      <div>
+{menu}
+<div>
+    <p></p>
+</div>
+      </div>
+    
+    
+    )
+  }
+
 }
-export default App;
+
+export default Menu

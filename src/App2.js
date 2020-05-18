@@ -1,21 +1,22 @@
-import { DISHES } from './shared/dishes';
-import { render } from '@testing-library/react';
-import React,{ Component } from 'react'
-import Menu from './App'
-
-class App extends Component{
+import React, { Component } from 'react'
+export default class Marks extends Component{
   constructor(props){
     super(props)
     this.state={
-        dishes:DISHES
+      mroll:this.props.roll
     }
-    render()
-    {
-return(
+  }
+  static getDerivedStateFromProps(props,state){
+    if(props.roll !==state.mroll){
+      return { mroll :props.roll};
+    }
+    return null;
+  }
+  render(){
+    return (
     <div>
-  <Menu dishes={this.state.dishes} />
-  </div>
-)}
+      {this.state.mroll}
+    </div>
+    )
+  }
 }
-}
-export default App

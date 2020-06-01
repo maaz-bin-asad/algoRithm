@@ -48,7 +48,7 @@ class Searching extends Component {
               <div  className="col-12 col-md-5 m-1">
                 <Card key={search.id}
                   onClick={() => this.onDishSelect(search)}>
-                      <a href="#card">Click to go</a>
+                      <a href="#card">Dive into it</a>
                                     <CardImgOverlay>
                       <CardTitle>{search.name}</CardTitle>
                   </CardImgOverlay>

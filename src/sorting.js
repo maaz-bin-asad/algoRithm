@@ -1,6 +1,9 @@
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle } from 'reactstrap';
     import React,{ Component } from 'react'
+    import FavoriteIcon from '@material-ui/icons/Favorite';
+
+    
 
 class Sorting extends Component {
 
@@ -47,12 +50,13 @@ class Sorting extends Component {
               <div  className="col-12 col-md-5 m-1">
                 <Card key={sort.id}
                   onClick={() => this.onDishSelect(sort)}>
-                      <a href="#card">Dive into it</a>
+                      <a href="#card" className="link">Dive into it</a>
                                     <CardImgOverlay>
                       <CardTitle>{sort.name}</CardTitle>
                   </CardImgOverlay>
-                   <button onClick={this.like.bind(this)} value={sort.id}>Loved it</button>
-            <p>{sort.likes}</p>
+                   <button onClick={this.like.bind(this)} value={sort.id}><FavoriteIcon/></button>
+            <p>{sort.likes} likes</p>
+            
                 </Card>
                
               </div>

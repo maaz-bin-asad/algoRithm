@@ -1,6 +1,7 @@
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle } from 'reactstrap';
     import React,{ Component } from 'react'
+    import FavoriteIcon from '@material-ui/icons/Favorite';
 
 class Searching extends Component {
 
@@ -48,12 +49,12 @@ class Searching extends Component {
               <div  className="col-12 col-md-5 m-1">
                 <Card key={search.id}
                   onClick={() => this.onDishSelect(search)}>
-                      <a href="#card">Dive into it</a>
+                      <a href="#card" className="link">Dive into it</a>
                                     <CardImgOverlay>
                       <CardTitle>{search.name}</CardTitle>
                   </CardImgOverlay>
-                  <button onClick={this.like.bind(this)} value={search.id}>Loved it</button>
-                  <p>{search.likes}</p>
+                  <button onClick={this.like.bind(this)} value={search.id}><FavoriteIcon /></button>
+                  <p>{search.likes} likes</p>
  
                 </Card>
               </div>

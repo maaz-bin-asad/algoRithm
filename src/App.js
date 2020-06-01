@@ -1,5 +1,6 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import Home from './Home'
+import FunctionsIcon from '@material-ui/icons/Functions'
 import Sorting from './sorting'
 import { Switch,Route,BrowserRouter } from 'react-router-dom'
 import Searching from './searching'
@@ -20,7 +21,7 @@ const App=()=>{
 
 <BrowserRouter>
 <div>
-    <h1>algoRithm</h1>
+    <h1><FunctionsIcon className="svg_icons1"/>algoRithm</h1>
     <h2>This is a website that contains several algorithms in a way that even a beginner understands and realizes the importance of studying algorithms</h2>
     <hr />
 <Header />

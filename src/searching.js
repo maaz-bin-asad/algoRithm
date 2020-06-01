@@ -23,6 +23,7 @@ class Searching extends Component {
                     <a href="#"></a>
                     <CardBody>
                       <CardTitle>{search.name}</CardTitle>
+                      <img src="linear.png" />
                       <CardText>{search.detail}</CardText>
                     </CardBody>
                 </Card>

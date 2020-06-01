@@ -25,28 +25,29 @@ function Home(props){
                 return{
 
                     name:value,
-                    email:prev,
+                    email:prev.email,
                     number:prev}
                 })
         }
             else if(name=="email"){
                 setForm((prev)=>{
                     return{
-                        name:prev,
+                        name:prev.name,
                         email:value,
-                        number:prev
+                        number:prev.number
                     }
                 })
             }
             else{
                 setForm((prev)=>{
                     return{
-                        name:prev,
-                        email:prev,
+                        name:prev.name,
+                        email:prev.email,
                         number:value
                     }
                 })
             }
+
     }
     return (
         <div className="container">

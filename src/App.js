@@ -1,20 +1,43 @@
-import React, { Component } from 'react'
-import Marks from './App2'
-export default class Student extends Component{
-  constructor(props){
-    super(props)
-    this.state={
-      roll:101
-    }
-  }
-  handleClick=()=>{
-    console.log(this.state.roll)
-    this.setState({roll:this.state.roll+1})
-  }
-  render(){
-    return <div>
-      <Marks roll={this.state.roll}/>
-      <button onClick={this.handleClick}>Change</button>
-    </div>
-  }
+import React, { Component, useState } from 'react'
+import Home from './Home'
+import Sorting from './sorting'
+import { Switch,Route,BrowserRouter } from 'react-router-dom'
+import Searching from './searching'
+import Header from './Header'
+import { SEARCHING } from './shared/searching'
+import { SORTING } from './shared/sorting'
+import Footer from './Footer'
+const App=()=>{
+    const [algo,setName]=useState({
+
+        searching:SEARCHING,
+        sorting:SORTING
+    })
+    
+    
+
+      return(
+
+<BrowserRouter>
+<div>
+    <h1>algoRithm</h1>
+    <h2>This is a website that contains several algorithms in a way that even a beginner understands and realizes the importance of studying algorithms</h2>
+    <hr />
+<Header />
+<Switch>
+    <Route path='/home' component={Home} />
+    <Route exact path='/searching' component={()=><Searching searching={algo.searching}/>} />
+    <Route exact path='/sorting' component={()=><Sorting sorting={algo.sorting}/>} />
+</Switch>
+<hr />
+<Footer />
+</div>
+</BrowserRouter>
+
+
+
+    )
 }
+export default App
+//Below is the implementation of binary search algorithm to proof 
+//that given number is perfect square

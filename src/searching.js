@@ -15,6 +15,14 @@ class Searching extends Component {
     onDishSelect(search) {
         this.setState({ selectedDish: search});
     }
+    like(e){
+        console.log(e.target.value) 
+        this.props.searching.forEach(element => {
+            if(element.id==e.target.value){
+                element.likes+=1
+            }
+        });  
+       }
 
     renderDish(search) {
         if (search != null)
@@ -23,7 +31,7 @@ class Searching extends Component {
                     <a href="#"></a>
                     <CardBody>
                       <CardTitle>{search.name}</CardTitle>
-                      <img src="linear.png" />
+                      <img src=" linear.png" />
                       <CardText>{search.detail}</CardText>
                     </CardBody>
                 </Card>
@@ -44,6 +52,9 @@ class Searching extends Component {
                                     <CardImgOverlay>
                       <CardTitle>{search.name}</CardTitle>
                   </CardImgOverlay>
+                  <button onClick={this.like.bind(this)} value={search.id}>Loved it</button>
+                  <p>{search.likes}</p>
+ 
                 </Card>
               </div>
             );

@@ -2,7 +2,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle } from 'reactstrap';
     import React,{ Component } from 'react'
     import FavoriteIcon from '@material-ui/icons/Favorite';
-
+    
 class Searching extends Component {
 
     constructor(props) {
@@ -47,6 +47,7 @@ class Searching extends Component {
         const menu = this.props.searching.map((search) => {
             return (
               <div  className="col-12 col-md-5 m-1">
+    
                 <Card key={search.id}
                   onClick={() => this.onDishSelect(search)}>
                       <a href="#card" className="link">Dive into it</a>
@@ -63,7 +64,7 @@ class Searching extends Component {
 
         return (
             <div className="container">
-                <div className="row">
+                          <div className="row">
                     {menu}
                 </div>
                 <div className="row">

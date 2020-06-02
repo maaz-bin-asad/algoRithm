@@ -65,7 +65,7 @@ class Sorting extends Component {
 
         return (
             <div className="container">
-                <div className="row">
+                        <div className="row">
                     {menu}
                 </div>
                 <div className="row">

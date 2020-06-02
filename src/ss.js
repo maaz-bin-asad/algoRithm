@@ -1,24 +1,17 @@
-//Below is the implementation of binary search algorithm to proof 
-//that given number is perfect square
-const num=81
-low=0
-high=81
-def binary_search(num,low,high){
-    if low>high{
-        return false
-    }
-    else{
-        mid=parseInt(low+high/2)
-        if(mid*mid==num){
-            return true
-        }
-        else if(mid*mid>num){
-            high=mid-1
-            return binary_search(num,low,high)
-        }
-        else{
-            low=mid+1
-            return binary_search(num,low,high)
-        }
+import React, { Component } from 'react'
+import { Theme } from './context/Theme'
+class Temp extends Component{
+    static contextType=Theme
+    render(){
+        console.log(this.context)
+        const { isLightTheme, light,dark}=this.context //destructuring object
+        const theme=isLightTheme ? light : dark;
+        return(
+<nav style={{background:theme.ui,color:theme.syntax}}>
+    <marquee scrollDelay="5" style={{fontSize:30}}>Algorithms are a way to perform problem solving in efficient manner. Algorithms follow same rule of thumb for every language</marquee>
+</nav>
+
+        )
     }
 }
+export default Temp

@@ -3,7 +3,7 @@ export const SORTING =
         {
             id:1,
             name:"Bubble Sort",
-            detail:"Bubble sort algorithm starts from the first element and keeps on comparing the next element woth the next element. If the next element is smaller than the current one, they both gets swapped otherwise the the loop continues. In every round, one element reaches it's correct position. Therefore,if given array has n elements, it would take n-1 rounds for all the elements to reach their correct positions.",
+            detail:"Bubble sort algorithm starts from the first element and keeps on comparing the next element with the next element. If the next element is smaller than the current one, they both get swapped, otherwise the the round continues. In every round, one element reaches it's correct position. Therefore,if given array has n elements, it would take n-1 rounds for all the elements to reach their correct positions.",
             likes:0
         },
         {

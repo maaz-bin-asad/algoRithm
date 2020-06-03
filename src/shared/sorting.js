@@ -23,5 +23,12 @@ export const SORTING =
             name:"Quick Sort",
             detail:"The quick sort is another efficient algorithm that works on divide and conquer approach. It takes an element which is the pivot element and goes through the array again. The elements smaller than it are placed on left side of and the elements while larger on the right. The procedure goes on untill the array gets sorted. In each recursion or iteration, one correct element reaches the desired position. The pivot element that we chose can either be last element of array or the first. For examples, if we have an array [2,1,3,4,2], 2 is popped out and placed at postion such that the array becomes [2,1,2,3,4]. In other round ,the lower subarray [2,1] is passed and which becomes [1,2]. The final array then becomes [1,2,2,3,4] and the array gets sorted. Notice that we need not to change the elements of larger subarray since it's already sorted",
             likes:0
+        },
+        {
+            id:5,
+            name:"Brick Sort",
+            detail:"The brick sort algorithm works in lot way similar to bubble sort except for that it makes two rounds inside the inner loop where it first sorts, for instance, all the even numbers and in other iteration,solves the odd numbers.The polynimial complexity of this algorithm is O(n^2). ",
+            likes:0
         }
+        
             ];

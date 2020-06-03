@@ -34,6 +34,7 @@ class Sorting extends Component {
                     <a href="#"></a>
                     <CardBody>
                       <CardTitle>{sort.name}</CardTitle>
+                      <img src={sort.img} />
                       <CardText>{sort.detail}</CardText>
                     </CardBody>
                 </Card>

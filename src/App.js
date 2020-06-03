@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import Home from './Home'
 import FunctionsIcon from '@material-ui/icons/Functions'
 import Sorting from './sorting'
+import Greedy from './greedy'
 import Toggle from './toggle'
 import { Switch,Route,BrowserRouter } from 'react-router-dom'
 import Searching from './searching'
 import Header from './Header'
 import { SEARCHING } from './shared/searching'
+import { GREEDING } from './shared/greedy'
 import { SORTING } from './shared/sorting'
 import Footer from './Footer'
 import ThemeProvider from './context/Theme'
@@ -17,7 +19,8 @@ const App=()=>{
     const [algo,setName]=useState({
 
         searching:SEARCHING,
-        sorting:SORTING
+        sorting:SORTING,
+        greeding:GREEDING
     })
     
     
@@ -41,6 +44,7 @@ const App=()=>{
     <Route path='/home' component={Home} />
     <Route exact path='/searching' component={()=><Searching searching={algo.searching}/>} />
     <Route exact path='/sorting' component={()=><Sorting sorting={algo.sorting}/>} />
+    <Route exact path='/greedy' component={()=><Greedy greeding={algo.greeding}/>} />
 </Switch>
 <hr />
 <Footer />
@@ -52,5 +56,3 @@ const App=()=>{
     )
 }
 export default App
-//Below is the implementation of binary search algorithm to proof 
-//that given number is perfect square

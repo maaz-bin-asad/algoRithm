@@ -11,12 +11,12 @@ class Sorting extends Component {
         super(props);
 
         this.state = {
-            selectedDish: null
+            selectedCard: null
         }
     }
 
-    onDishSelect(sort) {
-        this.setState({ selectedDish: sort});
+    onCardSelect(sort) {
+        this.setState({ selectedCard: sort});
     }
     like(e){
      console.log(e.target.value) 
@@ -27,7 +27,7 @@ class Sorting extends Component {
      });  
     }
 
-    renderDish(sort) {
+    renderCard(sort) {
         if (sort != null)
             return(
                 <Card id="card">
@@ -49,7 +49,7 @@ class Sorting extends Component {
             return (
               <div  className="col-12 col-md-5 m-1">
                 <Card key={sort.id}
-                  onClick={() => this.onDishSelect(sort)}>
+                  onClick={() => this.onCardSelect(sort)}>
                       <a href="#card" className="link">Dive into it</a>
                                     <CardImgOverlay>
                       <CardTitle>{sort.name}</CardTitle>
@@ -70,7 +70,7 @@ class Sorting extends Component {
                 </div>
                 <div className="row">
                   <div  className="col-12 col-md-5 m-1">
-                    {this.renderDish(this.state.selectedDish)}
+                    {this.renderCard(this.state.selectedCard)}
                   </div>
                 </div>
             </div>

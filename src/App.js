@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Home from './Home'
 import FunctionsIcon from '@material-ui/icons/Functions'
 import Sorting from './sorting'
+import Toggle from './toggle'
 import { Switch,Route,BrowserRouter } from 'react-router-dom'
 import Searching from './searching'
 import Header from './Header'
@@ -9,7 +10,7 @@ import { SEARCHING } from './shared/searching'
 import { SORTING } from './shared/sorting'
 import Footer from './Footer'
 import ThemeProvider from './context/Theme'
-import Temp from './ss'
+import Temp from './Float'
 
 const App=()=>{
     const [algo,setName]=useState({
@@ -29,6 +30,7 @@ const App=()=>{
     <hr />
     <ThemeProvider>
         <Temp />
+        <Toggle />
         </ThemeProvider>
 <Header />
 <Switch>

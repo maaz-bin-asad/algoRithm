@@ -10,7 +10,7 @@ const Header=()=>{
                 <li><Link to="/sorting" className="link">Sorting</Link></li>
                 <li><Link to="/greedy" className="link">Greedy</Link></li>
                 <li><Link to="/number" className="link">Number</Link></li>
-            </ul>
+                       </ul>
         </div>
     )
 }               

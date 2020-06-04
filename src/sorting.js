@@ -6,7 +6,6 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     
 
 class Sorting extends Component {
-
     constructor(props) {
         super(props);
 

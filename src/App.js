@@ -30,21 +30,24 @@ const App=()=>{
 <BrowserRouter>
 <div>
     <h1><FunctionsIcon className="svg_icons1"/>algoRithm</h1>
-    <h2>This is a website that contains several algorithms in a way that even a beginner understands and realizes the importance of studying algorithms</h2>
+    <h2>This is a website that contains several basic algorithms</h2>
     <hr />
     <ThemeProvider>
-        <AuthContextProvider>
-        <Temp />
-        <Toggle />
-        </AuthContextProvider>
-        </ThemeProvider>
-        
+    <Temp />
+    </ThemeProvider>
 <Header />
 <Switch>
+<ThemeProvider>
+        <AuthContextProvider>
+        
+        <Toggle />
     <Route path='/home' component={Home} />
     <Route exact path='/searching' component={()=><Searching searching={algo.searching}/>} />
     <Route exact path='/sorting' component={()=><Sorting sorting={algo.sorting}/>} />
     <Route exact path='/greedy' component={()=><Greedy greeding={algo.greeding}/>} />
+    
+    </AuthContextProvider>
+        </ThemeProvider>
 </Switch>
 <hr />
 <Footer />

@@ -4,9 +4,9 @@ class ThemeProvider extends Component{
     state={
 isLightTheme:true,
 light:{
-    syntax:'#555',ui:'#ddd', bg:'#eee'
+    syntax:'#ddd',ui:'#333',bg:'#555'
 },
-dark:{syntax:'#ddd',ui:'#333',bg:'#555'}
+dark:{syntax:'#555',ui:'#ddd', bg:'#eee'}
     }
     toggle=()=>{
         this.setState({isLightTheme:!this.state.isLightTheme})

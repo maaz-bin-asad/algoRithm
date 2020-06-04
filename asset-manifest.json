@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/practical-react/static/js/main.b746192c.chunk.js",
-    "main.js.map": "/practical-react/static/js/main.b746192c.chunk.js.map",
-    "runtime-main.js": "/practical-react/static/js/runtime-main.8737ee52.js",
-    "runtime-main.js.map": "/practical-react/static/js/runtime-main.8737ee52.js.map",
-    "static/js/2.547f0212.chunk.js": "/practical-react/static/js/2.547f0212.chunk.js",
-    "static/js/2.547f0212.chunk.js.map": "/practical-react/static/js/2.547f0212.chunk.js.map",
-    "index.html": "/practical-react/index.html",
-    "precache-manifest.bcf0897cda4652ffdf729e27fb94cdfa.js": "/practical-react/precache-manifest.bcf0897cda4652ffdf729e27fb94cdfa.js",
-    "service-worker.js": "/practical-react/service-worker.js",
-    "static/js/2.547f0212.chunk.js.LICENSE.txt": "/practical-react/static/js/2.547f0212.chunk.js.LICENSE.txt"
+    "main.js": "/algoRithm/static/js/main.d87d046e.chunk.js",
+    "main.js.map": "/algoRithm/static/js/main.d87d046e.chunk.js.map",
+    "runtime-main.js": "/algoRithm/static/js/runtime-main.a3a48c55.js",
+    "runtime-main.js.map": "/algoRithm/static/js/runtime-main.a3a48c55.js.map",
+    "static/js/2.547f0212.chunk.js": "/algoRithm/static/js/2.547f0212.chunk.js",
+    "static/js/2.547f0212.chunk.js.map": "/algoRithm/static/js/2.547f0212.chunk.js.map",
+    "index.html": "/algoRithm/index.html",
+    "precache-manifest.1ea008fa94fdc39721837ffbbf09c4d2.js": "/algoRithm/precache-manifest.1ea008fa94fdc39721837ffbbf09c4d2.js",
+    "service-worker.js": "/algoRithm/service-worker.js",
+    "static/js/2.547f0212.chunk.js.LICENSE.txt": "/algoRithm/static/js/2.547f0212.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8737ee52.js",
+    "static/js/runtime-main.a3a48c55.js",
     "static/js/2.547f0212.chunk.js",
-    "static/js/main.b746192c.chunk.js"
+    "static/js/main.d87d046e.chunk.js"
   ]
 }
